@@ -9,12 +9,12 @@ spec:
     kind: ClusterIssuer
   commonName: momice.dev
   dnsNames:
-    - k8s-multi.com
-    - www.k8s-multi.com
+    - momice.dev
+    - www.momice.dev
   acme:
     config:
       - http01:
           ingressClass: nginx
         domains:
-          - k8s-multi.com
-          - www.k8s-multi.com
+          - momice.dev
+          - www.momice.dev
