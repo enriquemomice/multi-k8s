@@ -12,7 +12,7 @@ spec:
     - hosts:
         - momice.dev
         - www.momice.dev
-      secretName: k8s-multi-com
+      secretName: momice-dev
   rules:
     - host: momice.dev
       http:
