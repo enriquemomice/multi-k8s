@@ -5,6 +5,6 @@ docker push enriquemomice/multi-client
 docker push enriquemomice/multi-server
 docker push enriquemomice/multi-worker
 kubectl apply -f k8s
-kubectl rolling-restart deployment/client-deployment
-kubectl rolling-restart deployment/server-deployment
-kubectl rolling-restart deployment/worker-deployment
+kubectl rollout restart deployment client-deployment
+kubectl rollout restart deployment server-deployment
+kubectl rollout restart deployment worker-deployment
